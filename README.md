@@ -21,3 +21,8 @@ Ainda não há um link para demonstração do projeto.
 * Melhorar performance;
 * Menu hamburger;
 * Menu contato.
+
+## 📜 Licença
+MIT.
+
+Criado com 💜 por [José Fernandes](https://linkedin.com/in/jose-vitor)🚀
