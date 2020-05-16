@@ -1,0 +1,122 @@
+
+$cores : (
+   ceu-11 : rgb(255, 210, 143), ceu-12 : rgb(248, 62, 124),
+   ceu-21 : rgb(46, 7, 92), ceu-22 : rgb(27, 213, 238),
+   success: #34ec87
+ );
+
+ @function cor($cor) { @return map-get($cores, $cor); }
+
+ @mixin selection($cor){
+   &::selection{
+      background-color: $cor;
+      color: white;
+   }
+}
+
+.unscrollable{ overflow: hidden; }
+
+.login-blur{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(black, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  backdrop-filter: blur(3px);
+  transition: all .4s ease;
+}
+
+.login-blur-hide{
+  opacity: 0;
+  z-index: -1;
+}
+
+@keyframes visibility{
+  from{
+    visibility: visible;
+  }
+
+  to{
+    visibility: hidden;
+  }
+}
+
+.login{
+   width: 80vw;
+   max-width: 600px;
+   background-color: cor(ceu-21);
+   padding: 2em;
+   transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+   box-shadow: 0 15px 40px 0 rgba(black, $alpha: .5);
+   color: white;
+
+   .login-form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .login-campos{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         justify-content: center;
+
+         label{
+            text-align: center;
+
+            span{
+               border-top: 3px solid cor(ceu-11);
+            }
+         }
+      
+         input{
+            user-select: text;
+            border: none;
+            padding: .5em 1em;
+            background-color: cor(ceu-12);
+            color: white;
+            text-align: center;
+            @include selection(cor(ceu-11));
+         }
+      }
+   
+      .btn-logar{
+         border: none;
+         padding: .5em 1em;
+         margin-top: 1em;
+         background-color: cor(ceu-11);
+         color: cor(ceu-12);
+         cursor: pointer;
+         transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+         &:hover{
+            transform: scale(1.2);
+         }
+      }   
+   }
+
+  .close-login{
+    position: relative;
+    float: right;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background-color: cor(ceu-12);
+    transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+    cursor: pointer;
+
+    &:hover{
+      transform: scale(1.2) rotate(135deg);
+      border-radius: 50%;
+    }
+  }
+
+}
+
+.login-closed{
+  transform: scale(0);
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Access-Control-Allow-Origin" content="*">
+  <title>Super Amigos</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <script src="./js/three/three.min.js"></script>
+  <script src="./js/three/GLTFLoader.js"></script>
+  <script src="./js/three/OrbitControls.js"></script>
+  <!-- FALHA AO TENTAR USAR AMBIENT OCCLUSION -->
+  <!-- <script src="./js/three/RenderPass.js"></script>
+  <script src="./js/three/ShaderPass.js"></script>
+  <script src="./js/three/EffectComposer.js"></script>
+  <script src="./js/three/SSAOPass.js"></script> -->
+  <script src="./js/main.js" defer></script>
+  <script src="./js/login.js" defer></script>
+  <script src="./js/smoothScroll.js" defer></script>
+  <script src="./js/model.js" defer></script>
+</head>
+<body>
+  <div class="block-page">
+    <p>A largura mínima de tela necessária para acessar é de 320px. 😥</p>
+  </div>
+
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#">super amigos</a></li>
+    </ul>
+    <ul class="nav-list">
+      <li class="nav-item btn-login"><a href="#">login</a></li>
+      <li class="nav-item btn-cadastro"><a href="./cadastro.html">cadastro</a></li>
+    </ul>
+  </nav>
+
+  <div class="app">
+
+    <div class="login-blur login-blur-hide">
+      <div class="login login-closed">
+        <div class="close-login"></div>
+        <div class="login-form">
+          <div class="login-campos">
+            <label for="anjo">Que <span>anjo</span> é você?</label>
+            <input type="text" name="anjo" class="inputs input-anjo">
+          </div>
+          <button class="btn-logar">Entrar</button>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="intro">
+      <div class="container">
+        <div class="intro-content">
+          <h1 class="intro-header intro-header-hide">Faça uma boa ação, Torne-se um Anjo!😊</h1>
+        </div>
+      </div>
+    </section>
+
+    <div class="cloud-list">
+      <div class="cloud-item">
+        <div class="cloud"></div>
+      </div>
+      <div class="cloud-item">
+        <div class="cloud"></div>
+      </div>
+      <!-- <div class="cloud-item">
+        <div class="cloud"></div>
+      </div>
+      <div class="cloud-item">
+        <div class="cloud"></div>
+      </div>
+      <div class="cloud-item">
+        <div class="cloud"></div>
+      </div> -->
+    </div>
+
+    <section class="middle">
+      <div class="stars star1"></div>
+      <div class="stars star2"></div>
+      <div class="stars star3"></div>
+      <div class="stars star4"></div>
+      <div class="stars star5"></div>
+      <div class="stars star6"></div>
+      <div class="stars star7"></div>
+      <div class="stars star8"></div>
+
+      <div class="container">
+        <div class="middle-content">
+          <div class="middle-c1">
+            <h1>Está precisando de uma doação?</h1>
+            <h2>Cadastra-se e aguarde um anjo aparecer para você</h2>
+          </div>
+          <div class="middle-c2">
+            <h1>Não precisa de doação, mas quer ajudar alguma família?</h1>
+            <h2>Confira as famílias que precisam de doação sem cadastro!</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="bottom">
+      <div class="container">
+        <div class="bottom-content">
+          <h1>Interessado?</h1>
+          <button class="btn-anjo">Tornar-me um Anjo</button>
+          <footer>
+            <p>Criado com 💜 por <a href="https://linkedin.com/in/jose-vitor" target="_blank">José Fernandes</a>.🚀</p>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Amigos - Cadastro</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="./css/cadastro.css">
+  <script src="./js/cadastro.js" defer></script>
+  <script src="./js/login.js" defer></script>
+</head>
+<body>
+  <div class="block-page">
+    <p>A largura mínima de tela necessária para acessar é de 320px. 😥</p>
+  </div>
+
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="./">super amigos</a></li>
+    </ul>
+    <ul class="nav-list">
+       <li class="nav-item"><a href="./">início</a></li>
+      <li class="nav-item btn-login"><a href="#">login</a></li>
+    </ul>
+  </nav>
+
+  <div class="app">
+   <div class="login-blur login-blur-hide">
+      <div class="login login-closed">
+        <div class="close-login"></div>
+        <div class="login-form">
+          <div class="login-campos">
+            <label for="anjo">Que <span>anjo</span> é você?</label>
+            <input type="text" name="anjo" class="input-anjo">
+          </div>
+          <button class="btn-logar">Entrar</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="cadastro">
+      <div class="cadastro-success">
+         <p>✨Cadastro efetuado com sucesso!😁</p>
+      </div>
+      <h1>Cadastro de Família</h1>
+      <div class="form-container">
+         <form action="" method="" class="form">
+            <div class="styled-input">
+               <label for="familia" class="labels">Família</label>
+               <input type="text" name="familia" class="inputs input-familia" required>
+            </div>
+            <div class="styled-input">
+               <label for="responsavel" class="labels">Responsável</label>
+               <input type="text" name="responsavel" class="inputs input-responsavel" required>
+            </div>
+            <div class="styled-input">
+               <label for="salario" class="labels">Renda</label>
+               <input type="text" name="salario" class="inputs input-salario" required>
+            </div>
+            <div class="styled-input">
+               <label for="endereco" class="labels">Endereço</label>
+               <input type="text" name="endereco" class="inputs input-endereco" required>
+            </div>
+            <div class="styled-text-area">
+               <span class="area-title">Digite um pouco sobre você/sua família</span>
+               <textarea name="motivo" cols="30" rows="10" class="text-areas text-sobre"  placeholder="Comece digitando aqui..." required></textarea>
+            </div>
+            <div class="styled-submit">
+               <button class="btn-cadastrar">Cadastrar</button>
+            </div>
+         </form>
+      </div>
+      <footer>
+         <p>Criado com 💜 por <a href="https://linkedin.com/in/jose-vitor" target="_blank">José Fernandes</a>.🚀</p>
+      </footer>
+    </section>
+  </div>
+</body>
+</html>
