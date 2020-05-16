@@ -8,7 +8,7 @@ A ideia é gerar uma rede de doações para poder ajudar as famílias que estão
 
 ## 🕹 Demo
 
-Ainda não há um link para demonstração do projeto.
+[Link para demonstração do projeto](https://devjosevitor.github.io/super-amigos)
 
 ## 📝 Todo
 
